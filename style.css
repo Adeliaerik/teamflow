@@ -300,7 +300,7 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1110px;
+  width: 1200px;
   height: 224px;
   margin-left: 80px;
   border-radius: 16px;
@@ -389,10 +389,33 @@ input {
   .burger-menu {
     display: block;
   }
+  .image-over {
+    width: 300px;
+  }
 }
-@media all and (max-width: 1300px) {
+@media all and (max-width: 900px) {
+  .manage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .section-3 {
+    font-size: 30px;
+  }
+}
+/* start-4 */
+@media all and (max-width: 1050px) {
+  .stn-4-img {
+    width: 70%;
+  }
+  .section-4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 1100px) {
   .section-7 {
-    width: 800px;
+    width: 900px;
   }
 }
 @media all and (max-width: 1100px) {
