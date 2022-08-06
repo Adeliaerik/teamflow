@@ -169,7 +169,7 @@ input {
   background-color: #f0ebfa;
 }
 
-.timeline img {
+.timeline_img {
   width: 650px;
   height: 510px;
   margin: 10px;
@@ -213,6 +213,10 @@ input {
 .info div {
   margin-top: 50px;
   justify-content: center;
+}
+.info_part {
+  width: 200px;
+  margin: 10px;
 }
 .info-2 {
   display: flex;
@@ -388,7 +392,7 @@ input {
 
 @media all and (max-width: 1050px) {
   .stn-4-img {
-    width: 100%;
+    width: 560px;
     display: flex;
     justify-content: center;
   }
@@ -455,3 +459,29 @@ input {
     width: 100px;
   }
 }
+@media all and (max-width: 750px) {
+  .manage {
+    font-size: 45px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .stn-4-img {
+    width: 400px;
+  }
+  .employees {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 650px) {
+  .resolve,
+  .resolve-p {
+    display: none;
+  }
+  .timeline__main {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* поменять шрифт у текстов, поменять размер картинок */
