@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 1300px;
+  /* width: 1300px; */
   margin: 30px 100px;
   max-width: 1100px;
   margin: 0 auto;
@@ -109,14 +109,17 @@ i {
 }
 
 .manage {
-  width: 600px;
+  width: 100%;
   font-size: 55px;
   text-align: center;
-  margin-left: 300px;
   margin-top: 30px;
 }
 input {
-  margin-left: 300px;
+  padding: 10px;
+}
+.btn-try {
+  display: flex;
+  justify-content: center;
 }
 .namegoogle {
   width: 319px;
@@ -138,11 +141,10 @@ input {
 }
 
 .paragraph {
-  width: 450px;
+  width: 100%;
   margin: 20px 0;
   text-align: center;
   color: #4e5a65;
-  margin-left: 300px;
 }
 
 .overview {
@@ -170,14 +172,13 @@ input {
 .timeline img {
   width: 650px;
   height: 510px;
-
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
 }
 
 .timeline__main {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .blc {
@@ -186,13 +187,14 @@ input {
 }
 
 .resolve {
-  width: 250px;
+  /* width: 250px; */
   height: 100px;
   margin-top: 30px;
 }
 
 .resolve-p {
-  width: 300px;
+  /* width: 300px; */
+  font-size: 20 px;
 }
 .section-3 {
   display: flex;
@@ -216,10 +218,13 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 20px 50px;
+  flex-wrap: wrap;
 }
 .info-2 img {
   width: 100px;
 }
+
 .section-4 {
   display: flex;
   justify-content: space-around;
@@ -231,7 +236,8 @@ input {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 30px;
   padding: 30px 0;
   font-family: "inter";
   font-style: normal;
@@ -246,10 +252,7 @@ input {
 .stn-4-block p {
   color: #4e5a65;
 }
-.stn-4-img {
-  width: 597px;
-  height: 405px;
-}
+
 .btn-2 {
   width: 164px;
   height: 52px;
@@ -300,9 +303,9 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   height: 224px;
-  margin-left: 80px;
+  /* margin-left: 80px; */
   border-radius: 16px;
   margin-top: 30px;
   font-size: 32px;
@@ -380,7 +383,43 @@ input {
   font-size: 14px;
   line-height: 14px;
 }
+
 /* адаптивная верстка */
+
+@media all and (max-width: 1050px) {
+  .stn-4-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .section-4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .image-over {
+    width: 800px;
+  }
+}
+
+@media all and (max-width: 980px) {
+  .image-over {
+    width: 700px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .resolve-p {
+    font-size: 16px;
+  }
+  .stn-4-img {
+    display: flex;
+    justify-content: center;
+  }
+  .employees {
+    font-size: 30px;
+  }
+}
+
 @media all and (max-width: 905px) {
   .header-buttons,
   .navbar {
@@ -390,7 +429,7 @@ input {
     display: block;
   }
   .image-over {
-    width: 300px;
+    width: 550px;
   }
 }
 @media all and (max-width: 900px) {
@@ -402,24 +441,17 @@ input {
   .section-3 {
     font-size: 30px;
   }
-}
-/* start-4 */
-@media all and (max-width: 1050px) {
-  .stn-4-img {
-    width: 70%;
-  }
-  .section-4 {
-    display: flex;
-    flex-wrap: wrap;
+  .timeline img {
+    width: 450px;
   }
 }
-@media all and (max-width: 1100px) {
-  .section-7 {
-    width: 900px;
+
+@media all and (max-width: 875px) {
+  .namegoogle {
+    width: 250px;
   }
-}
-@media all and (max-width: 1100px) {
-  .footer-box {
-    width: 900px;
+
+  .try {
+    width: 100px;
   }
 }
